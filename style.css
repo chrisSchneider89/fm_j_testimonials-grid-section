@@ -1,0 +1,282 @@
+/* barlow-semi-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/barlow-semi-condensed-v16-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-semi-condensed-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/barlow-semi-condensed-v16-latin-500.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-semi-condensed-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/barlow-semi-condensed-v16-latin-600.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-purple-50: hsl(260, 100%, 95%);
+  --color-purple-300: hsl(264, 82%, 80%);
+  --color-purple-500: hsl(263, 55%, 52%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-100: hsl(214, 17%, 92%);
+  --color-grey-200: hsl(0, 0%, 81%);
+  --color-grey-400: hsl(224, 10%, 45%);
+  --color-grey-500: hsl(217, 19%, 35%);
+  --color-dark-blue: hsl(219, 29%, 14%);
+  --color-black: hsl(0, 0%, 7%);
+
+  --c-background-body: var(--color-grey-100);
+  --ff-sans-serif: "Barlow Semi Condensed", Arial, Helvetica, sans-serif;
+
+  /*daniel*/
+  --c-background-daniel: var(--color-purple-500);
+  --c-font-daniel: var(--color-white);
+  --c-border-img-daniel: var(--color-purple-300);
+  /*jeanette*/
+  --c-background-jeanette: var(--color-white);
+  --c-font-jeanette: var(--color-grey-500);
+  /*jonathan*/
+  --c-background-jonathan: var(--color-grey-500);
+  --c-font-jonathan: var(--color-white);
+  /*patrick*/
+  --c-background-patrick: var(--color-dark-blue);
+  --c-font-patrick: var(--color-white);
+  --c-border-img-patrick: var(--color-purple-500);
+  /*kira*/
+  --c-background-kira: var(--color-white);
+  --c-font-kira: var(--color-grey-500);
+}
+
+body {
+  margin: 0;
+  background-color: var(--c-background-body);
+  
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+  padding: 100px;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  @media (width <= 23.4375rem){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card {
+  padding: 30px;
+  font-family: var(--ff-sans-serif);
+  border-radius: 12px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.daniel {
+  position: relative;
+  display: grid;
+  padding: 0 40px 40px 40px;
+  width: 555px;
+  height: 320px;
+  background-color: var(--c-background-daniel);
+  color: var(--c-font-daniel);    
+  grid-row-start: 1;
+  grid-column: span 2;
+  box-shadow: 8px 17px 20px -4px rgba(0,0,0,0.45);
+
+  img {
+    border: 3px solid var(--c-border-img-daniel);
+  }
+
+  .border-none {
+    border: none;
+  }
+
+  .bg-pattern-quotation {
+    margin-top: 0;
+    margin-right: 50px;
+    z-index: -1;
+  }
+
+  .margin-top {
+    margin-top: 30px;
+  }
+
+  h3 {
+    position: relative;
+    top: -43px;
+  }
+
+  p {
+    position: relative;
+    top: -60px;
+  }
+
+  @media (width <= 23.4375rem){
+    width: 360px;
+    height: auto;
+  }
+
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.flex-direction-column-daniel {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.flex-direction-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+
+.text-preset-2 {
+  font-size: 13px;
+  line-height: 110%;
+  letter-spacing: 0px;
+  margin-bottom: 4px;
+}
+
+.text-preset-4 {
+  font-size: 11px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+
+.text-preset-1 {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+.jeanette {  
+  grid-column-start: 1;
+  grid-row-start: 2;
+  background-color: var(--c-background-jeanette);
+  color: var(--c-font-jeanette);
+  padding: 40px;
+  height: 320px;
+  width: 270px;
+   box-shadow: 8px 17px 20px -4px rgba(0,0,0,0.45);
+
+    @media (width <= 23.4375rem){
+    width: 360px;
+    height: auto;
+  }
+}
+
+.patrick {  
+  grid-column-start: 2;
+  grid-column-end: 3;  
+  grid-row-start: 2;
+  grid-column: span 2; 
+  background-color: var(--c-background-patrick);
+  color: var(--c-font-patrick); 
+  padding: 40px;
+  width: 555px;
+  height: 320px;
+  box-shadow: 8px 17px 20px -4px rgba(0,0,0,0.45);
+
+   img {
+    border: 3px solid var(--c-border-img-patrick);
+  }
+
+    @media (width <= 23.4375rem){
+    width: 360px;
+    height: auto;
+  }
+}
+
+.jonathan {  
+  align-items: flex-end;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  background-color: var(--c-background-jonathan);
+  color: var(--c-font-jonathan);
+  padding: 40px;
+  height: 320px;
+  width: 270px;
+  box-shadow: 8px 17px 20px -4px rgba(0,0,0,0.45);
+
+    @media (width <= 23.4375rem){
+    width: 360px;
+    height: auto;
+  }
+}
+
+.kira {  
+  background-color: var(--c-background-kira);
+  color: var(--c-font-kira);
+  padding: 40px;
+  width: 260px;
+  height: 660px;
+  grid-row: span 2/4;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  box-shadow: 8px 17px 20px -4px rgba(0,0,0,0.45);
+
+    @media (width <= 23.4375rem){
+    width: 360px;
+    height: auto;
+  }
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
