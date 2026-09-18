@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,7 +14,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
-
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -33,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://chrisschneider89.github.io/fm_j_testimonials-grid-section/)
+- Live Site URL: [Add live site URL here](https://github.com/chrisSchneider89/fm_j_testimonials-grid-section)
 
 ## My process
 
@@ -56,12 +55,8 @@ I would like to gain a better understanding of Grid in the future.
 
 ### Useful resources
 
-- [Example resource 1](https://wesbos.com/courses) - This helped me for Understanding Grid. I really liked this course.
+- [wesbos.com](https://wesbos.com/courses) - This helped me for Understanding Grid. I really liked this course.
 
 ### AI Collaboration
 
 In this project, I only used AI to help me understand concepts.
-
-
-
-
